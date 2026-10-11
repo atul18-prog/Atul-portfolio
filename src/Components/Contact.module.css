@@ -1,0 +1,142 @@
+
+.contact {
+  background-color: #020617;
+  color: white;
+  padding: 100px 10%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #22d3ee;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.heading span {
+  color: #22d3ee;
+}
+
+.description {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+/* Contact cards */
+.contactCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 15px;
+  padding: 35px 25px;
+  text-align: center;
+
+  transition: transform 0.3s ease,
+              border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #22d3ee;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: #164e63;
+  color: #22d3ee;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card h3 {
+  font-size: 22px;
+  color: #22d3ee;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.contactLink {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  color: #22d3ee;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: color 0.3s;
+}
+
+.contactLink:hover {
+  color: white;
+}
+
+.card a:hover {
+  color: white;
+}
+
+.card a:hover {
+  color: white;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .contact {
+    padding: 80px 6%;
+  }
+
+  .contactCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact {
+    padding: 60px 6%;
+  }
+
+  .heading {
+    font-size: 34px;
+  }
+
+  .contactCards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 30px 20px;
+  }
+}

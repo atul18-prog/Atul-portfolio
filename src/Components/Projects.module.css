@@ -1,0 +1,160 @@
+
+.projects {
+  background-color: #0f172a;
+  color: white;
+  padding: 100px 10%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #22d3ee;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.heading span {
+  color: #22d3ee;
+}
+
+.description {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+/* Project cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 15px;
+  overflow: hidden;
+
+  transition: transform 0.3s ease,
+              border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #22d3ee;
+}
+
+.cardContent {
+  padding: 30px;
+}
+
+.cardContent h3 {
+  font-size: 23px;
+  color: #22d3ee;
+  margin-bottom: 18px;
+}
+
+.cardContent p {
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* Technology badges */
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.technologies span {
+  background-color: #1e293b;
+  color: #67e8f9;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.githubBtn,
+.demoBtn {
+  flex: 1;
+  text-align: center;
+  padding: 12px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.githubBtn {
+  background-color: #22d3ee;
+  color: #020617;
+}
+
+.githubBtn:hover {
+  background-color: #06b6d4;
+}
+
+.demoBtn {
+  border: 1px solid #22d3ee;
+  color: #22d3ee;
+}
+
+.demoBtn:hover {
+  background-color: #22d3ee;
+  color: #020617;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .projects {
+    padding: 80px 6%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .projects {
+    padding: 60px 6%;
+  }
+
+  .heading {
+    font-size: 34px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardContent {
+    padding: 25px;
+  }
+}

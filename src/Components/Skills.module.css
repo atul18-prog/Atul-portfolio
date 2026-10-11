@@ -1,0 +1,127 @@
+
+.skills {
+  background-color: #020617;
+  color: white;
+  padding: 100px 10%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #22d3ee;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.heading span {
+  color: #22d3ee;
+}
+
+.description {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+/* Skill cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 15px;
+  padding: 30px;
+
+  transition: transform 0.3s ease,
+              border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #22d3ee;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #22d3ee;
+  margin-bottom: 25px;
+}
+
+/* Individual skill badges */
+.skillList {
+  padding-left: 22px;
+  margin-top: 15px;
+}
+
+.skillList li {
+  color: #e2e8f0;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.skillList li::marker {
+  color: #22d3ee;
+}
+
+.skill {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid #334155;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  background-color: #22d3ee;
+  color: #020617;
+  border-color: #22d3ee;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .skills {
+    padding: 80px 6%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .skills {
+    padding: 60px 6%;
+  }
+
+  .heading {
+    font-size: 34px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 25px;
+  }
+}
